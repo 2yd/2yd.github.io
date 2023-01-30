@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Zeden&#39;s Blog</title>
-    <link>http://2yd.github.io/posts/</link>
+    <link>https://2yd.github.io/posts/</link>
     <description>Recent content in Posts on Zeden&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 30 Jan 2023 22:35:00 +0800</lastBuildDate><atom:link href="http://2yd.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2023 22:35:00 +0800</lastBuildDate><atom:link href="https://2yd.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>http://2yd.github.io/posts/first-post/</link>
+      <link>https://2yd.github.io/posts/first-post/</link>
       <pubDate>Mon, 30 Jan 2023 22:35:00 +0800</pubDate>
       
-      <guid>http://2yd.github.io/posts/first-post/</guid>
+      <guid>https://2yd.github.io/posts/first-post/</guid>
       <description>第一条blog祭天 Test</description>
     </item>
     
