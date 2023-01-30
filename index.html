@@ -23,19 +23,19 @@
 <meta name="theme-color" content="#ffffff" />
 
 
-<title>Hugo Theme Fuji - A minimal Hugo theme.</title>
+<title>Zeden&#39;s Blog - 副标题，写点啥好呢</title>
 
 
-<meta name="author" content="DSRKafuU" />
+<meta name="author" content="Zeden" />
 
 
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://2yd.github.io/index.xml" title="Hugo Theme Fuji" />
+<link rel="alternate" type="application/rss+xml" href="https://2yd.github.io/index.xml" title="Zeden's Blog" />
 
-<meta property="og:title" content="Hugo Theme Fuji" />
-<meta name="twitter:title" content="Hugo Theme Fuji" />
+<meta property="og:title" content="Zeden&#39;s Blog" />
+<meta name="twitter:title" content="Zeden&#39;s Blog" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://2yd.github.io/" /><meta property="og:image" content="https://2yd.github.io/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -89,9 +89,9 @@
     <header>
     <div class="container-lg clearfix">
         <div class="col-12 header">
-            <a class="title-main" href="https://2yd.github.io/">Hugo Theme Fuji</a>
+            <a class="title-main" href="https://2yd.github.io/">Zeden&#39;s Blog</a>
             
-            <span class="title-sub">A minimal Hugo theme.</span>
+            <span class="title-sub">副标题，写点啥好呢</span>
             
         </div>
     </div>
@@ -107,173 +107,18 @@
 
 <div class="post">
     <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/aplayer-test/">In-post APlayer Test</a>
+        <a href="https://2yd.github.io/post/first-post/">First Post</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2021-01-10</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-30</span>
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;40 字</span>
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;10 字</span>
 
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/test">test</a>&nbsp;<a href="/tags/aplayer">aplayer</a>&nbsp;</span>
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/test">test</a>&nbsp;</span>
 
     </div>
     <div class="post-item post-summary markdown-body">
-        <div class="post-player-wrapper">
-  <div
-    class="post-aplayer"
-    data-base="https://2yd.github.io/"
-    data-urls="/aplayer/berlin.mp3"
-    data-names="Berlin"
-    data-artists="Crowander"
-    data-covers="/aplayer/crowander.jpg"
-  ></div>
-</div>
-
-<p>This post is for in-post APlayer test, above is previous post-player.</p>
-<p>Music files are all downloaded from <a href="https://freemusicarchive.org" target="_blank">Free Music Archive</a>.</p>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/markdown-syntax/">Markdown Syntax</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-05-11</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;424 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/markdown">markdown</a>&nbsp;<a href="/tags/css">css</a>&nbsp;<a href="/tags/html">html</a>&nbsp;<a href="/tags/themes">themes</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
-<h2 id="headings">Headings</h2>
-<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/math-typesetting/">Math Typesetting</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2020-03-08</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;122 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;无标签</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
-<p>In this example we will be using <a href="https://katex.org/" target="_blank">KaTeX</a></p>
-<ul>
-<li>Create a partial under <code>/layouts/partials/math.html</code></li>
-<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html" target="_blank">Auto-render Extension</a> or host these scripts locally.</li>
-<li>Include the partial in your templates like so:</li>
-</ul>
-<pre><code>{{ if or .Params.math .Site.Params.math }}
-{{ partial &quot;math.html&quot; . }}
-{{ end }}
-</code></pre>
-<ul>
-<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project&rsquo;s configuration</li>
-<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files.</li>
-</ul>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/placeholder-text/">Placeholder Text</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2019-03-09</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;269 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/markdown">markdown</a>&nbsp;<a href="/tags/text">text</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        <p>Lorem est tota propiore conpellat pectoribus de
-pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice
-subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc
-caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis
-lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/emoji-support/">Emoji Support</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2019-03-05</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;138 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/emoji">emoji</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        <p>Emoji can be enabled in a Hugo project in a number of ways.</p>
-<p>The <a href="https://gohugo.io/functions/emojify/" target="_blank"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes" target="_blank">Inline Shortcodes</a>.</p>
-<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site’s <a href="https://gohugo.io/getting-started/configuration/" target="_blank">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
-<p><code>:s ee_no_evil:[Remove the space]</code> 🙈 <code>:h ear_no_evil:[Remove the space]</code> 🙉 <code>:s peak_no_evil:[Remove the space]</code> 🙊</p>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/cjk-unicode-test/">CJK Unicode Test</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2018-03-09</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1549 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/test">test</a>&nbsp;<a href="/tags/cjk">cjk</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        <p>The following is part of the CJK text, this page is for test use only.</p>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/wtf-article/">纯简体中文测试文章</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2017-04-01</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;11542 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/test">test</a>&nbsp;<a href="/tags/wtf">wtf</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        <p>本文内容无实际意义，由狗屁不通文章生成器自动生成，不代表作者本人观点。</p>
-<p>可是，即使是这样，一段代码写一天的出现仍然代表了一定的意义。一段代码写一天，到底应该如何实现。马克思在不经意间这样说过，一切节省，归根到底都归结为时间的节省。这不禁令我深思。马克思曾经说过，一切节省，归根到底都归结为时间的节省。</p>
-    </div>
-</div>
-
-<div class="post">
-    <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/post-meta-test/">Post-Meta Test with Lots of Tags</a>
-    </h2>
-    <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2016-12-21</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;81 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/tags">tags</a>&nbsp;<a href="/tags/css">css</a>&nbsp;<a href="/tags/cascading-stylesheets">cascading stylesheets</a>&nbsp;<a href="/tags/html">html</a>&nbsp;<a href="/tags/hypertext-markup-language">hypertext markup language</a>&nbsp;<a href="/tags/fuji-theme-tests">fuji theme tests</a>&nbsp;<a href="/tags/test">test</a>&nbsp;<a href="/tags/text">text</a>&nbsp;<a href="/tags/excessive-tags">excessive tags</a>&nbsp;</span>
-
-    </div>
-    <div class="post-item post-summary markdown-body">
-        The tags should wrap and not make a horizontal scroll bar appear. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        第一条blog祭天 Test
     </div>
 </div>
 
@@ -285,23 +130,19 @@ lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
         <ul>
             
             <li>
-                <a href="/">Home</a>
+                <a href="/">主页</a>
             </li>
             
             <li>
-                <a href="/archives/">Archives</a>
+                <a href="/archives/">归档</a>
             </li>
             
             <li>
-                <a href="/about/">About</a>
+                <a href="/search/">搜索</a>
             </li>
             
             <li>
-                <a href="/search/">Search</a>
-            </li>
-            
-            <li>
-                <a href="/index.xml">RSS</a>
+                <a href="/about/">关于</a>
             </li>
             
         </ul>
@@ -316,7 +157,7 @@ lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
             </li>
             
             <li>
-                <a href="https://space.bilibili.com/4224846" target="_blank"><span>bilibili</span></a>
+                <a href="https://space.bilibili.com/4224846" target="_blank"><span>Bilibili</span></a>
             </li>
             
         </ul>
@@ -327,63 +168,7 @@ lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
         <div>
             
             <span>
-                <a href="/tags/aplayer/">aplayer</a>
-            </span>
-            
-            <span>
-                <a href="/tags/cascading-stylesheets/">cascading stylesheets</a>
-            </span>
-            
-            <span>
-                <a href="/tags/cjk/">cjk</a>
-            </span>
-            
-            <span>
-                <a href="/tags/css/">css</a>
-            </span>
-            
-            <span>
-                <a href="/tags/emoji/">emoji</a>
-            </span>
-            
-            <span>
-                <a href="/tags/excessive-tags/">excessive tags</a>
-            </span>
-            
-            <span>
-                <a href="/tags/fuji-theme-tests/">fuji theme tests</a>
-            </span>
-            
-            <span>
-                <a href="/tags/html/">html</a>
-            </span>
-            
-            <span>
-                <a href="/tags/hypertext-markup-language/">hypertext markup language</a>
-            </span>
-            
-            <span>
-                <a href="/tags/markdown/">markdown</a>
-            </span>
-            
-            <span>
-                <a href="/tags/tags/">tags</a>
-            </span>
-            
-            <span>
                 <a href="/tags/test/">test</a>
-            </span>
-            
-            <span>
-                <a href="/tags/text/">text</a>
-            </span>
-            
-            <span>
-                <a href="/tags/themes/">themes</a>
-            </span>
-            
-            <span>
-                <a href="/tags/wtf/">wtf</a>
             </span>
             
         </div>
@@ -413,23 +198,19 @@ lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
         <ul>
             
             <li>
-                <a href="/">Home</a>
+                <a href="/">主页</a>
             </li>
             
             <li>
-                <a href="/archives/">Archives</a>
+                <a href="/archives/">归档</a>
             </li>
             
             <li>
-                <a href="/about/">About</a>
+                <a href="/search/">搜索</a>
             </li>
             
             <li>
-                <a href="/search/">Search</a>
-            </li>
-            
-            <li>
-                <a href="/index.xml">RSS</a>
+                <a href="/about/">关于</a>
             </li>
             
         </ul>
@@ -444,7 +225,7 @@ lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
             </li>
             
             <li>
-                <a href="https://space.bilibili.com/4224846" target="_blank"><span>bilibili</span></a>
+                <a href="https://space.bilibili.com/4224846" target="_blank"><span>Bilibili</span></a>
             </li>
             
         </ul>
@@ -455,63 +236,7 @@ lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
         <div>
             
             <span>
-                <a href="/tags/aplayer/">aplayer</a>
-            </span>
-            
-            <span>
-                <a href="/tags/cascading-stylesheets/">cascading stylesheets</a>
-            </span>
-            
-            <span>
-                <a href="/tags/cjk/">cjk</a>
-            </span>
-            
-            <span>
-                <a href="/tags/css/">css</a>
-            </span>
-            
-            <span>
-                <a href="/tags/emoji/">emoji</a>
-            </span>
-            
-            <span>
-                <a href="/tags/excessive-tags/">excessive tags</a>
-            </span>
-            
-            <span>
-                <a href="/tags/fuji-theme-tests/">fuji theme tests</a>
-            </span>
-            
-            <span>
-                <a href="/tags/html/">html</a>
-            </span>
-            
-            <span>
-                <a href="/tags/hypertext-markup-language/">hypertext markup language</a>
-            </span>
-            
-            <span>
-                <a href="/tags/markdown/">markdown</a>
-            </span>
-            
-            <span>
-                <a href="/tags/tags/">tags</a>
-            </span>
-            
-            <span>
                 <a href="/tags/test/">test</a>
-            </span>
-            
-            <span>
-                <a href="/tags/text/">text</a>
-            </span>
-            
-            <span>
-                <a href="/tags/themes/">themes</a>
-            </span>
-            
-            <span>
-                <a href="/tags/wtf/">wtf</a>
             </span>
             
         </div>
@@ -527,7 +252,7 @@ lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
         <div class="col-12 footer">
             
             <span>&copy; 2020-2023
-                <a href="https://2yd.github.io/">DSRKafuU</a>
+                <a href="https://2yd.github.io/">Zeden</a>
                  | <a href="https://github.com/dsrkafuu/hugo-theme-fuji">Source code</a> 
                 | 基于 <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
                    target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
