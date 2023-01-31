@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>learning on Zeden&#39;s Blog</title>
+    <link>https://2yd.github.io/tags/learning/</link>
+    <description>Recent content in learning on Zeden&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 31 Jan 2023 14:09:34 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown笔记</title>
+      <link>https://2yd.github.io/post/markdown_note/</link>
+      <pubDate>Tue, 31 Jan 2023 14:09:34 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/markdown_note/</guid>
+      <description>&lt;p&gt;Markdown笔记，用自己的方式记录Markdown语法，也可能作为cheat sheat。使用的编辑工具为Typora，如果使用其他编辑工具可能与这篇blog描述有所出入。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,12 +8,12 @@
     <language>en</language>
     <lastBuildDate>Mon, 30 Jan 2023 22:35:00 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post</title>
+      <title>第一条blog</title>
       <link>https://2yd.github.io/post/first-post/</link>
       <pubDate>Mon, 30 Jan 2023 22:35:00 +0800</pubDate>
       
       <guid>https://2yd.github.io/post/first-post/</guid>
-      <description>第一条blog祭天 Test</description>
+      <description>第一条blog祭天</description>
     </item>
     
   </channel>
