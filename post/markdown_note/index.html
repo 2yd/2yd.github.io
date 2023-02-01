@@ -114,7 +114,7 @@
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-01-31</span>
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2286 字</span>
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2290 字</span>
 
 <span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/markdown">markdown</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;</span>
 
@@ -209,7 +209,7 @@
 </ol>
 <h1 id="label1">链接 </h1>
 <blockquote>
-<p>最基本的使用：<code>[链接显示的文本](地址)</code>，比如<a href="www.acfun.cn">哔哩哔哩</a>。</p>
+<p>最基本的使用：<code>[链接显示的文本](地址)</code>，比如<a href="https://www.acfun.cn" target="_blank">哔哩哔哩</a>。</p>
 </blockquote>
 <p>根据语法的不同可以进行如下区分：</p>
 <h3 id="超链接">超链接</h3>
@@ -220,10 +220,10 @@
 <ol>
 <li>
 <p><code>[]</code>中的文本支持加粗斜体删除线等操作，代码格式也可以。</p>
-<p><a href="https://go.dev" target="_blank"><code>fmt.Println(&quot;Hello World&quot;)</code></a></p>
+<p><a href="https://go.dev" target="_blank"><code>fmt.Println(&quot;Hello World&quot;)</code></a> ←点一下</p>
 </li>
 <li>
-<p>可以为链接加title，格式为<code>[链接显示的文本](地址 &quot;title&quot;)</code>，title可以用双引号、单引号或括号包裹。效果为鼠标移上去之后显示的文本。比如<a href="www.acfun.cn" title="ニコニコ動画">哔哩哔哩</a></p>
+<p>可以为链接加title，格式为<code>[链接显示的文本](地址 &quot;title&quot;)</code>，title可以用双引号、单引号或括号包裹。效果为鼠标移上去之后显示的文本。比如<a href="https://www.acfun.cn" title="ニコニコ動画" target="_blank">哔哩哔哩</a></p>
 </li>
 <li>
 <p>可以配合标题链接使用，地址改成对应的标签就行了，比如<a href="#label1">点我回到链接标题</a>。</p>
@@ -242,10 +242,10 @@
 </blockquote>
 <p>示例：</p>
 <pre><code class="language-markdown">[哔哩哔哩][1]
-[1]: www.acfun.cn
+[1]: https://www.acfun.cn
 </code></pre>
 <p>渲染效果：</p>
-<p><a href="www.acfun.cn">哔哩哔哩</a></p>
+<p><a href="https://www.acfun.cn" target="_blank">哔哩哔哩</a></p>
 <p>不太简要的补充说明：</p>
 <ol>
 <li>第二部分其实不需要放在第一部分之前，只不过实际使用中更习惯放在后面。</li>
