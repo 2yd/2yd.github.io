@@ -6,13 +6,22 @@
     <description>Recent content in learning on Zeden&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Jan 2023 14:09:34 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 21:11:10 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang笔记（1）：格式、变量与常量</title>
+      <link>https://2yd.github.io/post/golang-note-1/</link>
+      <pubDate>Thu, 02 Feb 2023 21:11:10 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-1/</guid>
+      <description>&lt;p&gt;不会记录详细的使用方法，简明记录注意事项、特殊用法以及遇到的坑。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Markdown笔记</title>
-      <link>https://2yd.github.io/post/markdown_note/</link>
+      <link>https://2yd.github.io/post/markdown-note/</link>
       <pubDate>Tue, 31 Jan 2023 14:09:34 +0800</pubDate>
       
-      <guid>https://2yd.github.io/post/markdown_note/</guid>
+      <guid>https://2yd.github.io/post/markdown-note/</guid>
       <description>&lt;p&gt;Markdown笔记，用自己的方式记录Markdown语法，也可能作为cheat sheat。使用的编辑工具为Typora，如果使用其他编辑工具可能与这篇blog描述有所出入。&lt;/p&gt;</description>
     </item>
     
