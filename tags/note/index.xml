@@ -6,7 +6,16 @@
     <description>Recent content in note on Zeden&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Feb 2023 21:11:10 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 23:40:41 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>日语备忘录（1）形容词</title>
+      <link>https://2yd.github.io/post/jp-learn-note-01/</link>
+      <pubDate>Thu, 02 Feb 2023 23:40:41 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/jp-learn-note-01/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Golang笔记（1）：格式、变量与常量</title>
       <link>https://2yd.github.io/post/golang-note-1/</link>
