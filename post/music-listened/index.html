@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#ffffff" />
 
 
-<title>Golang笔记（1）：格式、变量与常量 - Zeden&#39;s Blog</title>
+<title>记录一下那些听过的社团、厂牌或其他 - Zeden&#39;s Blog</title>
 
 
 <meta name="author" content="Zeden" />
@@ -32,16 +32,16 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<meta name="keywords" content="golang, learning, note, programming" />
+<meta name="keywords" content="music" />
 
 
-<meta property="og:title" content="Golang笔记（1）：格式、变量与常量" />
-<meta name="twitter:title" content="Golang笔记（1）：格式、变量与常量" />
+<meta property="og:title" content="记录一下那些听过的社团、厂牌或其他" />
+<meta name="twitter:title" content="记录一下那些听过的社团、厂牌或其他" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://2yd.github.io/post/golang-note-1/" /><meta property="og:description" content="不会记录详细的使用方法，简明记录注意事项、特殊用法以及遇到的坑。" />
-<meta name="twitter:description" content="不会记录详细的使用方法，简明记录注意事项、特殊用法以及遇到的坑。" /><meta property="og:image" content="https://2yd.github.io/img/og.png" />
+<meta property="og:url" content="https://2yd.github.io/post/music-listened/" /><meta property="og:description" content="可能会随口聊两句关于这个社团的印象，排名不分先后。" />
+<meta name="twitter:description" content="可能会随口聊两句关于这个社团的印象，排名不分先后。" /><meta property="og:image" content="https://2yd.github.io/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://2yd.github.io/img/og.png" /><meta property="article:published_time" content="2023-02-02T21:11:10+08:00" /><meta property="article:modified_time" content="2023-02-02T21:11:10+08:00" />
+<meta name="twitter:image" content="https://2yd.github.io/img/og.png" /><meta property="article:published_time" content="2023-02-06T20:10:16+08:00" /><meta property="article:modified_time" content="2023-02-06T20:10:16+08:00" />
 
 
 <style>
@@ -107,145 +107,178 @@
 <article>
     
     <h2 class="post-item post-title">
-        <a href="https://2yd.github.io/post/golang-note-1/">Golang笔记（1）：格式、变量与常量</a>
+        <a href="https://2yd.github.io/post/music-listened/">记录一下那些听过的社团、厂牌或其他</a>
     </h2>
     <div class="post-item post-meta">
-        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-02</span>
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-06</span>
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1331 字</span>
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;515 字</span>
 
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/golang">golang</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/music">music</a>&nbsp;</span>
 
     </div>
     
     <div class="post-content markdown-body">
-        <p>不会记录详细的使用方法，简明记录注意事项、特殊用法以及遇到的坑。</p>
-<h1 id="格式">格式</h1>
-<p>golang为了“简洁和优雅”规定了很严格的<a href="https://go.dev/ref/spec" target="_blank">格式规范</a>，这里只列出一些凤毛麟角。</p>
-<h3 id="分号">分号</h3>
-<p>golang编译器会自动为每一条语句末尾添加分号，不需要也不建议手动添加。
-如果一行需要多条语句则需要手动添加分号，可能会在for循环和if条件中使用，其他情况不建议这么写。</p>
-<h3 id="大括号">大括号</h3>
-<p>golang中第一个大括号<strong>必须不换行</strong>，因为会自动添加分号换行就报错。<del>我喜欢</del></p>
-<pre><code class="language-go">func main() {
-   // 编译通过
-}
-</code></pre>
-<pre><code class="language-go">func main() 
-{
-//编译不通过
-}
-</code></pre>
-<h3 id="注释">注释</h3>
-<p>虽然有<code>/* 块注释 */</code>，但建议全部使用<code>// 单行注释</code>。块注释一般用于包注释，方便在godoc指令下生成文档。</p>
-<h1 id="变量">变量</h1>
-<h3 id="变量声明">变量声明</h3>
-<p><strong><em>变量声明了就必须使用，否则报错</em></strong><br>
-<strong><em>变量声明了就必须使用，否则报错</em></strong><br>
-<strong><em>变量声明了就必须使用，否则报错</em></strong></p>
-<p>基础款：</p>
-<pre><code class="language-go">var num int //注意数据类型（int）的位置
-num = 10
-
-var num1, num2 int //也ok
-</code></pre>
-<p>为什么数据类型要放在后面呢，可以看<a href="https://go.dev/blog/declaration-syntax" target="_blank">Go&rsquo;s Declaration Syntax</a>这篇博客，简而言之是为了更好的可读性。</p>
-<p>声明并初始化：</p>
-<pre><code class="language-go">var num = 10 //数据类型可以省略，编译器会自动推断
-var num int32 = 10 //当然不要推断出来的int类型也可以
-var num1, num2 = 10, 20 //并行赋值
-var num3, string1 = 30, &quot;hello world&quot; //类型不一样也ok
-</code></pre>
-<p>再简化一点：（短变量赋值）</p>
-<pre><code class="language-go">num := 10 //这里就绝对不能写数据类型了
-num1, num2 := 10, 20
-num3, string1 := 30, &quot;hello world&quot;
-</code></pre>
-<p><strong>短变量赋值的左侧不一定全是新变量，若原变量已声明则效果等同于赋值。同时左侧必须至少有一个新变量</strong>。</p>
-<pre><code class="language-go">var num4 int
-num4, num5 := 20,30
-</code></pre>
-<p>golang有很多“因式分解”式语法，比如变量也可以这么声明。</p>
-<pre><code>var (
-		num  = 10
-		num2 = 20
-		num3 = 30
-)
-</code></pre>
-<h3 id="变量的默认值">变量的默认值</h3>
-<p>如果变量生成时没有初始化，默认值为其数据类型的零值。</p>
-<pre><code class="language-go">func main() {
-   var num int
-   fmt.Println(num) //0
-}
-</code></pre>
-<h3 id="可导出与不可导出">可导出与不可导出</h3>
-<p>标识符首字母大写表示可以导出，相当于其他语言中的public，可以在其他包使用。<br>
-标识符首字母小写表示不可导出，相当于其他语言中的private，不可以在其他包使用。<br>
-关于包以后会在其他blog中详细说明。</p>
-<h3 id="无效的标识符">无效的标识符</h3>
+        <p>可能会随口聊两句关于这个社团的印象，排名不分先后。</p>
 <ul>
 <li>
-<p>2yd （数字开头）</p>
+<p>紺碧studio</p>
 </li>
 <li>
-<p>interface（<a href="#keyword">关键字</a>或保留字），但是<a href="#predefined">预定义标识符</a>是可以使用的，下面的语句就是合法的</p>
-<pre><code class="language-go">var append int
-append = 20
-</code></pre>
+<p>THE OTHER FLOWER<br>
+东方团体，vocal是花たん，好听。</p>
 </li>
 <li>
-<p>a+b（运算符）</p>
+<p>ALiCE&rsquo;S EMOTiON<br>
+REDALiCE主催，可以欣赏到他早期的曲子</p>
+</li>
+<li>
+<p>少女フラクタル</p>
+</li>
+<li>
+<p>CYCLIK CONTROL</p>
+</li>
+<li>
+<p>INTX Rec.</p>
+</li>
+<li>
+<p>AcuticNotes<br>
+An一个人组成的音乐团体，纯纯的artcore</p>
+</li>
+<li>
+<p>ELFENSJóN</p>
+</li>
+<li>
+<p>Hardcore Armament Reloaded</p>
+</li>
+<li>
+<p>音召缶</p>
+</li>
+<li>
+<p>RJT Music<br>
+Real Japanese Trance</p>
+</li>
+<li>
+<p>ZYTOKINE</p>
+</li>
+<li>
+<p>はちみつれもん</p>
+</li>
+<li>
+<p>On Prism Records<br>
+专做术立口，曲风大多很清新，我很中意。</p>
+</li>
+<li>
+<p>MEGAREX</p>
+</li>
+<li>
+<p>GET IN THE RING</p>
+</li>
+<li>
+<p>Lilium Records<br>
+比较老牌的社团，曲风很多变。</p>
+</li>
+<li>
+<p>SKETCH UP! Recordings</p>
+</li>
+<li>
+<p>SPACELECTRO<br>
+东方社团，专做EDM改编</p>
+</li>
+<li>
+<p>NiZi RiNGO</p>
+</li>
+<li>
+<p>Illegal Wave Records<br>
+6th主催，比较黑暗凶残的hardcore</p>
+</li>
+<li>
+<p>Exist Twinkle</p>
+</li>
+<li>
+<p>BlackY&rsquo;s BEATFLOOR</p>
+</li>
+<li>
+<p>Yoohsic Roomz<br>
+和上面那个一样一看就知道是谁的社团</p>
+</li>
+<li>
+<p>Round Wave Crusher</p>
+</li>
+<li>
+<p>dat file records</p>
+</li>
+<li>
+<p>For You Sounds</p>
+</li>
+<li>
+<p>Kirara Records<br>
+Happy Hardcore比较多，快乐。</p>
+</li>
+<li>
+<p>Sensitive Heart</p>
+</li>
+<li>
+<p>Hardcore Tano*C<br>
+越来越不Hardcore</p>
+</li>
+<li>
+<p>Next Reflection</p>
+</li>
+<li>
+<p>wavforme<br>
+个人心目中封面做的最好看的社团之一，成员也都很有实力。</p>
+</li>
+<li>
+<p>Fujimi lndustry Records<br>
+比较underground的厂牌，所以会有很多听起来很与众不同甚至怪异的歌，但也因此很有新鲜感。</p>
+</li>
+<li>
+<p>Riparia Records</p>
+</li>
+<li>
+<p>Diverse System<br>
+成员个个都是国家队级别</p>
+</li>
+<li>
+<p>suwawa Records</p>
+</li>
+<li>
+<p>Rolling Contact<br>
+天音的别名义，专做EDM各种曲风的东方曲，很有才华。</p>
+</li>
+<li>
+<p>VIVID HARDCORE<br>
+专做happy hardcore，双倍的快乐。</p>
+</li>
+<li>
+<p>Psycho Filth Records<br>
+速核，快快快。</p>
+</li>
+<li>
+<p>Japanese Stream Hardcore<br>
+DJ MYOSUKE主催，所以硬度有保证。。。</p>
+</li>
+<li>
+<p>SuganoMusic</p>
+</li>
+<li>
+<p>Binzokomegane Girls Union</p>
+</li>
+<li>
+<p>Login Records</p>
+</li>
+<li>
+<p>Loquartz</p>
+</li>
+<li>
+<p>RTTF Records</p>
+</li>
+<li>
+<p>DACHiTRAX<br>
+因为对かめりあ的喜爱而创立的社团，音乐也都是模仿他的风格。</p>
 </li>
 </ul>
-<h3 id="空白标识符">空白标识符</h3>
-<p>空白标识符为<code>_</code>，任何数据类型都可以给它赋值，赋值后该值被舍弃。由于golang中所有变量都至少被使用一次，_就可以用来接受不需要的赋值，比如在range中就经常使用。</p>
-<pre><code class="language-go">array := [5]int{1,3,5,7,9}
-sum := 0
-for _, val := range array {
-	sum += val
-}
-</code></pre>
-<h3 id="命名规范">命名规范</h3>
-<ul>
-<li>尽可能简洁，不要多余的说明，不需要在标识符中包含包名。</li>
-<li>不要下划线，统统驼峰命名。</li>
-<li>一些约定俗成或硬性规定，比如接口标识符通常以I开头或er结尾，标识符大写表示可以导出……以后会出现很多。</li>
-</ul>
-<h1 id="常量">常量</h1>
-<p>顾名思义，常量的值是不能改变的，否则报编译时错误。</p>
-<h3 id="常量声明">常量声明</h3>
-<pre><code class="language-go">const PI = 3.1415926 //常量声明必须初始化，数据类型依旧可省略
-const Ln2 = 0.693147180559945309417232121458\
-			176568075500134360255254120680009 //反斜杠可以作为连接符
-const male, female = 0, 1 //并行赋值
-const ( //因式分解式声明
-	Monday, Tuesday, Wednesday = 1, 2, 3
-	Thursday, Friday, Saturday = 4, 5, 6
-)
-</code></pre>
-<h3 id="常量的初始化">常量的初始化</h3>
-<p>常量声明时必须初始化。由于在常量声明编译期间其他自定义函数都是未知，因此不能用自定义函数返回值初始化常量，但是内置函数比如len()可以。</p>
-<h3 id="iota">iota</h3>
-<p>当常量需要被当作枚举值时可以通过iota简化代码：</p>
-<pre><code class="language-go">const (
-	type00 = 0
-	type01 = 1
-	type02 = 2
-	type03 = 3
-	type04 = 4
-)
-</code></pre>
-<p>等价于</p>
-<pre><code class="language-go">const (
-	type00 = iota
-	type01
-	type02
-	type03
-	type04
-)
-</code></pre>
-<p><strong>实际上iota的规则非常复杂，可以参考<a href="https://www.cnblogs.com/bigdataZJ/p/go-iota.html" target="_blank">三分钟看透iota</a></strong>。</p>
     </div>
 </article>
 
@@ -339,46 +372,7 @@ const ( //因式分解式声明
         </div>
     </div>
     <div class="sidebar-item sidebar-toc">
-        <h3>目录</h3><nav id="TableOfContents">
-  <ul>
-    <li><a href="#格式">格式</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#分号">分号</a></li>
-            <li><a href="#大括号">大括号</a></li>
-            <li><a href="#注释">注释</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#变量">变量</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#变量声明">变量声明</a></li>
-            <li><a href="#变量的默认值">变量的默认值</a></li>
-            <li><a href="#可导出与不可导出">可导出与不可导出</a></li>
-            <li><a href="#无效的标识符">无效的标识符</a></li>
-            <li><a href="#空白标识符">空白标识符</a></li>
-            <li><a href="#命名规范">命名规范</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#常量">常量</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#常量声明">常量声明</a></li>
-            <li><a href="#常量的初始化">常量的初始化</a></li>
-            <li><a href="#iota">iota</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
+        <h3>目录</h3><nav id="TableOfContents"></nav></div>
 </aside>
 
         </div>
@@ -477,46 +471,7 @@ const ( //因式分解式声明
     
     <div class="sidebar-item sidebar-toc">
         <h3>目录</h3>
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#格式">格式</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#分号">分号</a></li>
-            <li><a href="#大括号">大括号</a></li>
-            <li><a href="#注释">注释</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#变量">变量</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#变量声明">变量声明</a></li>
-            <li><a href="#变量的默认值">变量的默认值</a></li>
-            <li><a href="#可导出与不可导出">可导出与不可导出</a></li>
-            <li><a href="#无效的标识符">无效的标识符</a></li>
-            <li><a href="#空白标识符">空白标识符</a></li>
-            <li><a href="#命名规范">命名规范</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li><a href="#常量">常量</a>
-      <ul>
-        <li>
-          <ul>
-            <li><a href="#常量声明">常量声明</a></li>
-            <li><a href="#常量的初始化">常量的初始化</a></li>
-            <li><a href="#iota">iota</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+        <nav id="TableOfContents"></nav>
     </div>
     
     
