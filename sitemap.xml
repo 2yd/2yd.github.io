@@ -2,37 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://2yd.github.io/tags/music/</loc>
-    <lastmod>2023-02-06T20:10:16+08:00</lastmod>
+    <loc>https://2yd.github.io/tags/algorithm/</loc>
+    <lastmod>2023-02-23T20:20:51+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/tags/leetcode/</loc>
+    <lastmod>2023-02-23T20:20:51+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/leetcode-89/</loc>
+    <lastmod>2023-02-23T20:20:51+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/tags/note/</loc>
+    <lastmod>2023-02-23T20:20:51+08:00</lastmod>
   </url><url>
     <loc>https://2yd.github.io/post/</loc>
-    <lastmod>2023-02-06T20:10:16+08:00</lastmod>
+    <lastmod>2023-02-23T20:20:51+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/tags/programming/</loc>
+    <lastmod>2023-02-23T20:20:51+08:00</lastmod>
   </url><url>
     <loc>https://2yd.github.io/</loc>
+    <lastmod>2023-02-23T20:20:51+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/tags/learning/</loc>
+    <lastmod>2023-02-23T15:23:21+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/tags/rust/</loc>
+    <lastmod>2023-02-23T15:23:21+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/rust-note-05/</loc>
+    <lastmod>2023-02-23T15:23:21+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/rust-note-04/</loc>
+    <lastmod>2023-02-21T23:22:38+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/rust-note-03/</loc>
+    <lastmod>2023-02-21T22:09:45+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/tags/golang/</loc>
+    <lastmod>2023-02-21T15:12:03+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/golang-note-06/</loc>
+    <lastmod>2023-02-21T15:12:03+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/golang-note-05/</loc>
+    <lastmod>2023-02-21T13:15:32+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/rust-note-02/</loc>
+    <lastmod>2023-02-20T23:52:41+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/rust-note-01/</loc>
+    <lastmod>2023-02-20T21:21:43+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/golang-note-04/</loc>
+    <lastmod>2023-02-20T16:35:40+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/post/golang-note-03/</loc>
+    <lastmod>2023-02-19T23:39:54+08:00</lastmod>
+  </url><url>
+    <loc>https://2yd.github.io/tags/music/</loc>
     <lastmod>2023-02-06T20:10:16+08:00</lastmod>
   </url><url>
     <loc>https://2yd.github.io/post/music-listened/</loc>
     <lastmod>2023-02-06T20:10:16+08:00</lastmod>
   </url><url>
-    <loc>https://2yd.github.io/tags/japanese/</loc>
-    <lastmod>2023-02-02T23:40:41+08:00</lastmod>
+    <loc>https://2yd.github.io/post/golang-note-02/</loc>
+    <lastmod>2023-02-04T18:51:59+08:00</lastmod>
   </url><url>
-    <loc>https://2yd.github.io/tags/learning/</loc>
-    <lastmod>2023-02-02T23:40:41+08:00</lastmod>
-  </url><url>
-    <loc>https://2yd.github.io/tags/note/</loc>
-    <lastmod>2023-02-02T23:40:41+08:00</lastmod>
-  </url><url>
-    <loc>https://2yd.github.io/post/jp-learn-note-01/</loc>
-    <lastmod>2023-02-02T23:40:41+08:00</lastmod>
-  </url><url>
-    <loc>https://2yd.github.io/tags/golang/</loc>
-    <lastmod>2023-02-02T21:11:10+08:00</lastmod>
-  </url><url>
-    <loc>https://2yd.github.io/post/golang-note-1/</loc>
-    <lastmod>2023-02-02T21:11:10+08:00</lastmod>
-  </url><url>
-    <loc>https://2yd.github.io/tags/programming/</loc>
+    <loc>https://2yd.github.io/post/golang-note-01/</loc>
     <lastmod>2023-02-02T21:11:10+08:00</lastmod>
   </url><url>
     <loc>https://2yd.github.io/tags/markdown/</loc>

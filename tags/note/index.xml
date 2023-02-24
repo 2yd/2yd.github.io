@@ -6,22 +6,112 @@
     <description>Recent content in note on Zeden&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Feb 2023 23:40:41 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Feb 2023 20:20:51 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/note/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>日语备忘录（1）形容词</title>
-      <link>https://2yd.github.io/post/jp-learn-note-01/</link>
-      <pubDate>Thu, 02 Feb 2023 23:40:41 +0800</pubDate>
+      <title>Leetcode 89：格雷编码</title>
+      <link>https://2yd.github.io/post/leetcode-89/</link>
+      <pubDate>Thu, 23 Feb 2023 20:20:51 +0800</pubDate>
       
-      <guid>https://2yd.github.io/post/jp-learn-note-01/</guid>
+      <guid>https://2yd.github.io/post/leetcode-89/</guid>
+      <description>&lt;h4 id=&#34;格雷编码httpsleetcodecnproblemsgray-code&#34;&gt;&lt;a href=&#34;https://leetcode.cn/problems/gray-code/&#34; target=&#34;_blank&#34;&gt;格雷编码&lt;/a&gt;&lt;/h4&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rust 笔记（5）：所有权</title>
+      <link>https://2yd.github.io/post/rust-note-05/</link>
+      <pubDate>Thu, 23 Feb 2023 15:23:21 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/rust-note-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust 笔记（4）：流程控制（条件分支和循环）</title>
+      <link>https://2yd.github.io/post/rust-note-04/</link>
+      <pubDate>Tue, 21 Feb 2023 23:22:38 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/rust-note-04/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust 笔记（3）：函数、语句和表达式</title>
+      <link>https://2yd.github.io/post/rust-note-03/</link>
+      <pubDate>Tue, 21 Feb 2023 22:09:45 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/rust-note-03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（6）：数组</title>
+      <link>https://2yd.github.io/post/golang-note-06/</link>
+      <pubDate>Tue, 21 Feb 2023 15:12:03 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-06/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（5）：字符串的更多玩法</title>
+      <link>https://2yd.github.io/post/golang-note-05/</link>
+      <pubDate>Tue, 21 Feb 2023 13:15:32 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-05/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust 笔记（2）：数据类型</title>
+      <link>https://2yd.github.io/post/rust-note-02/</link>
+      <pubDate>Mon, 20 Feb 2023 23:52:41 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/rust-note-02/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust 笔记（1）：变量与可变性、常量、隐藏</title>
+      <link>https://2yd.github.io/post/rust-note-01/</link>
+      <pubDate>Mon, 20 Feb 2023 21:21:43 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/rust-note-01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（4）：基础类型们</title>
+      <link>https://2yd.github.io/post/golang-note-04/</link>
+      <pubDate>Mon, 20 Feb 2023 16:35:40 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-04/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（3）：包、作用域</title>
+      <link>https://2yd.github.io/post/golang-note-03/</link>
+      <pubDate>Sun, 19 Feb 2023 23:39:54 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang笔记（2）：指针、new函数、赋值</title>
+      <link>https://2yd.github.io/post/golang-note-02/</link>
+      <pubDate>Sat, 04 Feb 2023 18:51:59 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-02/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang笔记（1）：格式、变量与常量</title>
-      <link>https://2yd.github.io/post/golang-note-1/</link>
+      <link>https://2yd.github.io/post/golang-note-01/</link>
       <pubDate>Thu, 02 Feb 2023 21:11:10 +0800</pubDate>
       
-      <guid>https://2yd.github.io/post/golang-note-1/</guid>
+      <guid>https://2yd.github.io/post/golang-note-01/</guid>
       <description>&lt;p&gt;不会记录详细的使用方法，简明记录注意事项、特殊用法以及遇到的坑。&lt;/p&gt;</description>
     </item>
     
