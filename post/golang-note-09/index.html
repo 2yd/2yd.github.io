@@ -23,7 +23,7 @@
 <meta name="theme-color" content="#ffffff" />
 
 
-<title>learning - Zeden&#39;s Blog</title>
+<title>Golang 笔记（9）：结构体 - Zeden&#39;s Blog</title>
 
 
 <meta name="author" content="Zeden" />
@@ -32,14 +32,16 @@
 <meta name="description" content="A minimal Hugo theme with nice theme color." />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://2yd.github.io/tags/learning/index.xml" title="Zeden's Blog" />
+<meta name="keywords" content="golang, learning, note, programming" />
 
-<meta property="og:title" content="learning" />
-<meta name="twitter:title" content="learning" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://2yd.github.io/tags/learning/" /><meta property="og:image" content="https://2yd.github.io/img/og.png" />
+
+<meta property="og:title" content="Golang 笔记（9）：结构体" />
+<meta name="twitter:title" content="Golang 笔记（9）：结构体" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://2yd.github.io/post/golang-note-09/" /><meta property="og:description" content="" />
+<meta name="twitter:description" content="" /><meta property="og:image" content="https://2yd.github.io/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://2yd.github.io/img/og.png" /><meta property="og:updated_time" content="2023-02-25T21:45:18+08:00" />
+<meta name="twitter:image" content="https://2yd.github.io/img/og.png" /><meta property="article:published_time" content="2023-02-25T21:45:18+08:00" /><meta property="article:modified_time" content="2023-02-25T21:45:18+08:00" />
 
 
 <style>
@@ -102,193 +104,145 @@
             
             <div class="col-12 col-md-9 float-left content">
                 
-
-<div class="page-info">
-  <span>拥有标签 learning 的文章：</span>
-</div>
-
-
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/golang-note-09/">Golang 笔记（9）：结构体</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-25</span>
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://2yd.github.io/post/golang-note-09/">Golang 笔记（9）：结构体</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-25</span>
 
 <span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;529 字</span>
 
 <span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/golang">golang</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
 
-  </div>
-  <div class="post-item post-summary markdown-body">
+    </div>
     
-  </div>
-</div>
+    <div class="post-content markdown-body">
+        <h1 id="结构体导论">结构体导论</h1>
+<p>和 c 一脉相承的结构体，相同点就跳过了。</p>
+<p>先上代码段</p>
+<pre><code class="language-go">type Point struct {  
+   x, y int  
+}  
+  
+func main() {  
+   p1 := new(Point)  
+   p1.x = 10  
+   p1.y = 20  
+   p1 = &amp;Point{10, 11}  
+   p2 := Point{  
+      x: 10,  
+      y: 20,  
+   }  
+   fmt.Printf(&quot;%#v,%#v\n&quot;, p1, p2)  //&amp;main.Point{x:10, y:11},main.Point{x:10, y:20}
+   fmt.Println(p1.x == p2.x &amp;&amp; p1.y == p2.y)  
+   fmt.Println(*p1 == p2)  //两句等价，都是false
+}
+</code></pre>
+<p><code>new(T)</code> 其中 T 为结构体。这个函数会创建一个 T 类型的结构体并将指针返回。</p>
+<p>go 删除了 <code>-&gt;</code>，指针或是变量都用 <code>.</code> 获取成员</p>
+<p>如果结构体的每个成员都是可可比较的，那么这个结构体也是可比较的，当成员对应相等时返回 true。</p>
+<p>关于函数传参，结构体在 go 中是值类型，和数组一样，所以传参最好传指针。</p>
+<pre><code class="language-go">func main() {  
+   p1 := scale(new(Point), 5)  
+   fmt.Printf(&quot;%#v&quot;, p1) //&amp;main.Point{x:0, y:0}  
+   p2 := scale(&amp;Point{  
+      x: 10,  
+      y: 20,  
+   }, 5)  
+   fmt.Printf(&quot;%#v&quot;, p2) //&amp;main.Point{x:50, y:100}  
+}  
+  
+func scale(p *Point, factor int) *Point {  
+   return &amp;Point{p.x * factor, p.y * factor}  
+}
+</code></pre>
+<p>关于可导出性：<br>
+当结构体名首字母大写，首字母大写的成员可以导出</p>
+<pre><code class="language-go">//ptest.go
+package ptest  
+  
+type Point struct {  
+   X, y int  
+}
 
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/golang-note-08/">Golang 笔记（8）：map</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-25</span>
+//main.go
+package main  
+  
+import &quot;test/ptest&quot;  
+  
+func main() {  
+   p := ptest.Point{X: 10} //不能访问y  
+}
+</code></pre>
+<p>当结构体首字母小写时整个结构体都不能导出。</p>
+<pre><code class="language-go">//ptest.go
+package ptest  
+  
+type point struct {  
+   X, y int  
+}
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;481 字</span>
+//main.go
+package main  
+  
+import &quot;test/ptest&quot;  
+  
+func main() {  
+   p := ptest.point{} //不能访问point
+}
+</code></pre>
+<h1 id="结构体嵌套">结构体嵌套</h1>
+<p>这个是 go 的重头戏。go 通过嵌套实现继承</p>
+<pre><code class="language-go">type Point struct {  
+   x, y int  
+}  
+type Circle struct {  
+   Point  
+   radius int  
+}  
+  
+func main() {  
+   p := Point{10, 20}  
+   c1 := Circle{p, 10}  
+   c2 := Circle{  
+      Point:  Point{10, 20},  
+      radius: 10,  
+   }  
+   fmt.Printf(&quot;%d&quot;, c1.x) //10  
+   fmt.Println(c1 == c2)  //true  
+}
+</code></pre>
+<p>可以看到不用 <code>c1.Point.x</code> 就可以访问 x，虽然 <code>c1.Point.x</code> 也可以访问，但是谁不喜欢少写点呢。</p>
+<p>当命名冲突时，直接上代码，很直观</p>
+<pre><code class="language-go">type father struct {  
+   age int  
+}  
+  
+type children struct {  
+   father  
+   age int  
+}  
+  
+func main() {  
+   c := children{father{30}, 5}  
+   fmt.Printf(&quot;%d,%d&quot;, c.age, c.father.age)  //5,30
+}
+</code></pre>
+    </div>
+</article>
 
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/golang">golang</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
 
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/golang-note-07/">Golang 笔记（7）：切片（slice）</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-24</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;558 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/golang">golang</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/rust-note-05/">Rust 笔记（5）：所有权</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-23</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;1053 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/rust">rust</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/rust-note-04/">Rust 笔记（4）：流程控制（条件分支和循环）</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-21</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;412 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/rust">rust</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/rust-note-03/">Rust 笔记（3）：函数、语句和表达式</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-21</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;374 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/rust">rust</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/golang-note-06/">Golang 笔记（6）：数组</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-21</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;369 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/golang">golang</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/golang-note-05/">Golang 笔记（5）：字符串的更多玩法</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-21</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;319 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/golang">golang</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/rust-note-02/">Rust 笔记（2）：数据类型</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-20</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;647 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/rust">rust</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
-</div>
-
-<div class="post">
-  <h2 class="post-item post-title">
-    <a href="https://2yd.github.io/post/rust-note-01/">Rust 笔记（1）：变量与可变性、常量、隐藏</a>
-  </h2>
-  <div class="post-item post-meta">
-    <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-02-20</span>
-
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;329 字</span>
-
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/rust">rust</a>&nbsp;<a href="/tags/learning">learning</a>&nbsp;<a href="/tags/note">note</a>&nbsp;<a href="/tags/programming">programming</a>&nbsp;</span>
-
-  </div>
-  <div class="post-item post-summary markdown-body">
-    
-  </div>
+<div class="license markdown-body">
+    <blockquote>
+        <p>除特殊注明部分，本站内容采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+               target="_blank">CC BY-NC-SA 4.0</a> 进行许可。</p>
+    </blockquote>
 </div>
 
 
-<div class="pagination"><div class="pag-item pag-current">
-    <a href="/tags/learning/">1</a>
-  </div><div class="pag-item">
-    <a href="/tags/learning/page/2/">2</a>
-  </div><div class="pag-next">
-    <a href="/tags/learning/page/2/"><i class="iconfont icon-chevron-forward-circle-sharp"></i></a>
-  </div><div class="pag-last">
-    <a href="/tags/learning/page/2/"><i class="iconfont icon-caret-forward-circle-sharp"></i></a>
-  </div></div>
+
             </div>
             <aside class="col-12 col-md-3 float-left sidebar">
     
@@ -380,9 +334,13 @@
             
         </div>
     </div>
-    
-    
-    
+    <div class="sidebar-item sidebar-toc">
+        <h3>目录</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#结构体导论">结构体导论</a></li>
+    <li><a href="#结构体嵌套">结构体嵌套</a></li>
+  </ul>
+</nav></div>
 </aside>
 
         </div>
@@ -487,6 +445,18 @@
             </span>
             
         </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>目录</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#结构体导论">结构体导论</a></li>
+    <li><a href="#结构体嵌套">结构体嵌套</a></li>
+  </ul>
+</nav>
     </div>
     
     

@@ -6,7 +6,34 @@
     <description>Recent content in learning on Zeden&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Feb 2023 15:23:21 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 21:45:18 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang 笔记（9）：结构体</title>
+      <link>https://2yd.github.io/post/golang-note-09/</link>
+      <pubDate>Sat, 25 Feb 2023 21:45:18 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（8）：map</title>
+      <link>https://2yd.github.io/post/golang-note-08/</link>
+      <pubDate>Sat, 25 Feb 2023 20:32:01 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（7）：切片（slice）</title>
+      <link>https://2yd.github.io/post/golang-note-07/</link>
+      <pubDate>Fri, 24 Feb 2023 00:26:03 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-07/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Rust 笔记（5）：所有权</title>
       <link>https://2yd.github.io/post/rust-note-05/</link>

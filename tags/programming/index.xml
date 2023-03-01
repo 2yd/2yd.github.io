@@ -6,7 +6,43 @@
     <description>Recent content in programming on Zeden&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Feb 2023 20:20:51 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Mar 2023 18:28:50 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 707：设计链表</title>
+      <link>https://2yd.github.io/post/leetcode-707/</link>
+      <pubDate>Wed, 01 Mar 2023 18:28:50 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/leetcode-707/</guid>
+      <description>&lt;p&gt;这题那叫一个糟心啊，特此记录一下&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（9）：结构体</title>
+      <link>https://2yd.github.io/post/golang-note-09/</link>
+      <pubDate>Sat, 25 Feb 2023 21:45:18 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（8）：map</title>
+      <link>https://2yd.github.io/post/golang-note-08/</link>
+      <pubDate>Sat, 25 Feb 2023 20:32:01 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（7）：切片（slice）</title>
+      <link>https://2yd.github.io/post/golang-note-07/</link>
+      <pubDate>Fri, 24 Feb 2023 00:26:03 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-07/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Leetcode 89：格雷编码</title>
       <link>https://2yd.github.io/post/leetcode-89/</link>

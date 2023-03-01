@@ -6,7 +6,34 @@
     <description>Recent content in golang on Zeden&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Feb 2023 15:12:03 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Feb 2023 21:45:18 +0800</lastBuildDate><atom:link href="https://2yd.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang 笔记（9）：结构体</title>
+      <link>https://2yd.github.io/post/golang-note-09/</link>
+      <pubDate>Sat, 25 Feb 2023 21:45:18 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-09/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（8）：map</title>
+      <link>https://2yd.github.io/post/golang-note-08/</link>
+      <pubDate>Sat, 25 Feb 2023 20:32:01 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-08/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang 笔记（7）：切片（slice）</title>
+      <link>https://2yd.github.io/post/golang-note-07/</link>
+      <pubDate>Fri, 24 Feb 2023 00:26:03 +0800</pubDate>
+      
+      <guid>https://2yd.github.io/post/golang-note-07/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Golang 笔记（6）：数组</title>
       <link>https://2yd.github.io/post/golang-note-06/</link>
